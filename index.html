@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8" />
@@ -8,9 +8,12 @@
     <!-- Open Graph -->
     <meta property="og:title" content="Зарема Алиевна — профессиональный визажист" />
     <meta property="og:description" content="Преображаю образы с любовью к деталям. Макияж для свадьбы, фотосессий, вечеринок и повседневной жизни." />
-    <meta property="og:image" content="https://ваш-сайт/путь-к-превью.jpg" />
-    <meta property="og:url" content="https://ваш-сайт/" />
+    <meta property="og:image" content="https://i.ibb.co/JRcqg4sw/photo-2026-06-26-14-28-52.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://my-makeup-site.pages.dev/" />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Зарема Алиевна | Визажист" />
     <meta name="twitter:card" content="summary_large_image" />
 
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
@@ -55,9 +58,7 @@
             padding: 0 25px;
         }
 
-        h1,
-        h2,
-        h3 {
+        h1, h2, h3 {
             font-family: 'Playfair Display', serif;
             font-weight: 400;
             letter-spacing: 0.5px;
@@ -70,16 +71,16 @@
             display: inline-block;
         }
 
-            h2:after {
-                content: '';
-                position: absolute;
-                bottom: -6px;
-                left: 0;
-                width: 70px;
-                height: 3px;
-                background: var(--gold);
-                border-radius: 10px;
-            }
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 70px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 10px;
+        }
 
         .section-subtitle {
             font-size: 1.1rem;
@@ -101,24 +102,23 @@
             animation: heroFadeIn 0.8s var(--transition) forwards;
         }
 
-            .hero .anim-item:nth-child(1) {
-                animation-delay: 0.2s;
-            }
+        .hero .anim-item:nth-child(1) {
+            animation-delay: 0.2s;
+        }
 
-            .hero .anim-item:nth-child(2) {
-                animation-delay: 0.5s;
-            }
+        .hero .anim-item:nth-child(2) {
+            animation-delay: 0.5s;
+        }
 
-            .hero .anim-item:nth-child(3) {
-                animation-delay: 0.8s;
-            }
+        .hero .anim-item:nth-child(3) {
+            animation-delay: 0.8s;
+        }
 
         @keyframes heroFadeIn {
             0% {
                 opacity: 0;
                 transform: translateY(40px) scale(0.95);
             }
-
             100% {
                 opacity: 1;
                 transform: translateY(0) scale(1);
@@ -131,10 +131,10 @@
             transition: opacity 0.9s var(--transition), transform 0.9s var(--transition);
         }
 
-            .reveal.active {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
         .stagger-children > * {
             opacity: 0;
@@ -142,37 +142,14 @@
             transition: opacity 0.7s var(--transition), transform 0.7s var(--transition);
         }
 
-        .stagger-children.active > *:nth-child(1) {
-            transition-delay: 0.05s;
-        }
-
-        .stagger-children.active > *:nth-child(2) {
-            transition-delay: 0.15s;
-        }
-
-        .stagger-children.active > *:nth-child(3) {
-            transition-delay: 0.25s;
-        }
-
-        .stagger-children.active > *:nth-child(4) {
-            transition-delay: 0.35s;
-        }
-
-        .stagger-children.active > *:nth-child(5) {
-            transition-delay: 0.45s;
-        }
-
-        .stagger-children.active > *:nth-child(6) {
-            transition-delay: 0.55s;
-        }
-
-        .stagger-children.active > *:nth-child(7) {
-            transition-delay: 0.65s;
-        }
-
-        .stagger-children.active > *:nth-child(8) {
-            transition-delay: 0.75s;
-        }
+        .stagger-children.active > *:nth-child(1) { transition-delay: 0.05s; }
+        .stagger-children.active > *:nth-child(2) { transition-delay: 0.15s; }
+        .stagger-children.active > *:nth-child(3) { transition-delay: 0.25s; }
+        .stagger-children.active > *:nth-child(4) { transition-delay: 0.35s; }
+        .stagger-children.active > *:nth-child(5) { transition-delay: 0.45s; }
+        .stagger-children.active > *:nth-child(6) { transition-delay: 0.55s; }
+        .stagger-children.active > *:nth-child(7) { transition-delay: 0.65s; }
+        .stagger-children.active > *:nth-child(8) { transition-delay: 0.75s; }
 
         .stagger-children.active > * {
             opacity: 1;
@@ -193,9 +170,9 @@
             transition: box-shadow 0.4s ease;
         }
 
-            header.scrolled {
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
-            }
+        header.scrolled {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        }
 
         .header-inner {
             display: flex;
@@ -215,10 +192,10 @@
             transition: 0.3s ease;
         }
 
-            nav a:hover {
-                border-bottom-color: var(--gold);
-                color: var(--gold);
-            }
+        nav a:hover {
+            border-bottom-color: var(--gold);
+            color: var(--gold);
+        }
 
         .nav-toggle {
             display: none;
@@ -229,7 +206,7 @@
             cursor: pointer;
         }
 
-        /* ---------- HERO — с фото как фон ---------- */
+        /* ---------- HERO — фото как фон ---------- */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -239,7 +216,6 @@
             padding-top: 80px;
         }
 
-        /* Фоновое фото с затемнением */
         .hero-bg {
             position: absolute;
             top: 0;
@@ -255,18 +231,17 @@
             z-index: 0;
         }
 
-            .hero-bg:after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(135deg, rgba(30, 24, 20, 0.75) 0%, rgba(30, 24, 20, 0.45) 50%, rgba(30, 24, 20, 0.65) 100%);
-                z-index: 1;
-            }
+        .hero-bg:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(30, 24, 20, 0.75) 0%, rgba(30, 24, 20, 0.45) 50%, rgba(30, 24, 20, 0.65) 100%);
+            z-index: 1;
+        }
 
-        /* декоративный узор поверх */
         .hero-pattern {
             position: absolute;
             top: 0;
@@ -303,31 +278,26 @@
             filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.15));
         }
 
-            .hero-logo svg text {
-                fill: #fff !important;
-            }
-
-                .hero-logo svg text:last-child {
-                    fill: rgba(255, 255, 255, 0.85) !important;
-                }
-
-            .hero-logo svg ellipse {
-                opacity: 0.3 !important;
-            }
-
-            .hero-logo svg path,
-            .hero-logo svg circle,
-            .hero-logo svg line {
-                stroke: rgba(255, 255, 255, 0.6) !important;
-            }
-
-                .hero-logo svg circle[fill] {
-                    fill: rgba(255, 200, 190, 0.7) !important;
-                }
-
-            .hero-logo svg .flowerGrad stop {
-                stop-color: rgba(255, 200, 190, 0.8) !important;
-            }
+        .hero-logo svg text {
+            fill: #fff !important;
+        }
+        .hero-logo svg text:last-child {
+            fill: rgba(255, 255, 255, 0.85) !important;
+        }
+        .hero-logo svg ellipse {
+            opacity: 0.3 !important;
+        }
+        .hero-logo svg path,
+        .hero-logo svg circle,
+        .hero-logo svg line {
+            stroke: rgba(255, 255, 255, 0.6) !important;
+        }
+        .hero-logo svg circle[fill] {
+            fill: rgba(255, 200, 190, 0.7) !important;
+        }
+        .hero-logo svg .flowerGrad stop {
+            stop-color: rgba(255, 200, 190, 0.8) !important;
+        }
 
         .hero-text p {
             font-size: 1.2rem;
@@ -355,23 +325,21 @@
             cursor: pointer;
         }
 
-            .btn i {
-                font-size: 1.2rem;
-                color: var(--gold);
-            }
+        .btn i {
+            font-size: 1.2rem;
+            color: var(--gold);
+        }
 
-            .btn:hover {
-                background: var(--gold);
-                color: #fff;
-                transform: translateY(-3px);
-                box-shadow: 0 12px 40px rgba(196, 154, 122, 0.35);
-            }
+        .btn:hover {
+            background: var(--gold);
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(196, 154, 122, 0.35);
+        }
+        .btn:hover i {
+            color: #fff;
+        }
 
-                .btn:hover i {
-                    color: #fff;
-                }
-
-        /* Убираем старый блок с круглым фото */
         .hero-image {
             display: none;
         }
@@ -390,11 +358,11 @@
             line-height: 1.9;
         }
 
-            .about-text p {
-                margin-bottom: 22px;
-            }
+        .about-text p {
+            margin-bottom: 22px;
+        }
 
-        /* ---------- ПОРТФОЛИО (БЕЗ ПОДПИСЕЙ) ---------- */
+        /* ---------- ПОРТФОЛИО (без подписей) ---------- */
         .portfolio {
             background: var(--cream);
         }
@@ -418,60 +386,52 @@
             flex-direction: column;
         }
 
-            .gallery-item:hover {
-                transform: translateY(-6px);
-                box-shadow: 0 16px 45px rgba(196, 154, 122, 0.12);
-                border-color: rgba(196, 154, 122, 0.15);
-            }
+        .gallery-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 45px rgba(196, 154, 122, 0.12);
+            border-color: rgba(196, 154, 122, 0.15);
+        }
 
-            .gallery-item .image-wrapper {
-                flex: 1;
-                padding: 6px;
-                background: #fff;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                overflow: hidden;
-            }
+        .gallery-item .image-wrapper {
+            flex: 1;
+            padding: 6px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
 
-            .gallery-item img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                display: block;
-                border-radius: 14px;
-                background: #fcf8f5;
-            }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            border-radius: 14px;
+            background: #fcf8f5;
+        }
 
-            .gallery-item:nth-child(1) {
-                grid-column: span 2;
-                grid-row: span 2;
-            }
-
-            .gallery-item:nth-child(2) {
-                grid-column: span 1;
-                grid-row: span 1;
-            }
-
-            .gallery-item:nth-child(3) {
-                grid-column: span 1;
-                grid-row: span 1;
-            }
-
-            .gallery-item:nth-child(4) {
-                grid-column: span 2;
-                grid-row: span 1;
-            }
-
-            .gallery-item:nth-child(5) {
-                grid-column: span 1;
-                grid-row: span 2;
-            }
-
-            .gallery-item:nth-child(6) {
-                grid-column: span 1;
-                grid-row: span 1;
-            }
+        .gallery-item:nth-child(1) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .gallery-item:nth-child(2) {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .gallery-item:nth-child(3) {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        .gallery-item:nth-child(4) {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+        .gallery-item:nth-child(5) {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+        /* 6-й элемент удалён */
 
         /* ---------- ДО И ПОСЛЕ ---------- */
         .before-after {
@@ -498,53 +458,52 @@
             cursor: pointer;
         }
 
-            .ba-item:hover {
-                transform: translateY(-6px);
-                box-shadow: 0 16px 45px rgba(196, 154, 122, 0.12);
-                border-color: rgba(196, 154, 122, 0.15);
-            }
+        .ba-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 45px rgba(196, 154, 122, 0.12);
+            border-color: rgba(196, 154, 122, 0.15);
+        }
 
-            .ba-item img {
-                width: 100%;
-                height: 340px;
-                object-fit: contain;
-                display: block;
-                border-radius: 16px;
-                background: #fcf8f5;
-            }
+        .ba-item img {
+            width: 100%;
+            height: 340px;
+            object-fit: contain;
+            display: block;
+            border-radius: 16px;
+            background: #fcf8f5;
+        }
 
-            .ba-item .label {
-                position: absolute;
-                bottom: 20px;
-                left: 20px;
-                background: rgba(0, 0, 0, 0.5);
-                backdrop-filter: blur(6px);
-                color: #fff;
-                padding: 6px 22px;
-                border-radius: 40px;
-                font-size: 0.8rem;
-                font-weight: 500;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                border: 1px solid rgba(255, 255, 255, 0.1);
-            }
+        .ba-item .label {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(6px);
+            color: #fff;
+            padding: 6px 22px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-                .ba-item .label.before {
-                    background: rgba(196, 154, 122, 0.8);
-                }
+        .ba-item .label.before {
+            background: rgba(196, 154, 122, 0.8);
+        }
+        .ba-item .label.after {
+            background: var(--gold);
+        }
 
-                .ba-item .label.after {
-                    background: var(--gold);
-                }
-
-        /* ---------- ВИДЕО ---------- */
+        /* ---------- ВИДЕО (без подписей) ---------- */
         .video-section {
             background: var(--cream);
         }
 
         .video-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
 
@@ -557,28 +516,18 @@
             border: 1px solid rgba(196, 154, 122, 0.06);
         }
 
-            .video-item:hover {
-                transform: translateY(-6px);
-                box-shadow: 0 16px 45px rgba(196, 154, 122, 0.1);
-            }
+        .video-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 45px rgba(196, 154, 122, 0.1);
+        }
 
-            .video-item video {
-                width: 100%;
-                height: auto;
-                display: block;
-                aspect-ratio: 16/9;
-                object-fit: cover;
-            }
-
-            .video-item .video-caption {
-                padding: 14px 20px;
-                background: #fff;
-                text-align: center;
-                font-weight: 400;
-                color: var(--text-light);
-                font-size: 0.95rem;
-                border-top: 1px solid rgba(0, 0, 0, 0.02);
-            }
+        .video-item video {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
 
         /* ---------- ПРАЙС ---------- */
         .price {
@@ -601,41 +550,41 @@
             border: 1px solid rgba(196, 154, 122, 0.06);
         }
 
-            .price-card:hover {
-                transform: translateY(-8px);
-                box-shadow: 0 16px 45px rgba(196, 154, 122, 0.10);
-                border-color: rgba(196, 154, 122, 0.15);
-            }
+        .price-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 45px rgba(196, 154, 122, 0.10);
+            border-color: rgba(196, 154, 122, 0.15);
+        }
 
-            .price-card i {
-                font-size: 2.8rem;
-                color: var(--gold);
-                margin-bottom: 15px;
-            }
+        .price-card i {
+            font-size: 2.8rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
 
-            .price-card h3 {
-                font-size: 1.4rem;
-                font-weight: 500;
-                margin-bottom: 8px;
-            }
+        .price-card h3 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
 
-            .price-card .cost {
-                font-size: 1.8rem;
-                font-weight: 600;
-                color: var(--text-dark);
-                margin: 12px 0;
-            }
+        .price-card .cost {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 12px 0;
+        }
 
-                .price-card .cost small {
-                    font-size: 1rem;
-                    font-weight: 300;
-                    color: var(--text-light);
-                }
+        .price-card .cost small {
+            font-size: 1rem;
+            font-weight: 300;
+            color: var(--text-light);
+        }
 
-            .price-card .desc {
-                color: var(--text-light);
-                font-size: 0.95rem;
-            }
+        .price-card .desc {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
 
         /* ---------- КОНТАКТЫ ---------- */
         .contacts {
@@ -669,28 +618,27 @@
             border: 1px solid rgba(196, 154, 122, 0.04);
         }
 
-            .contact-item:hover {
-                transform: translateX(6px);
-                box-shadow: 0 8px 25px rgba(196, 154, 122, 0.10);
-                border-color: rgba(196, 154, 122, 0.12);
-            }
+        .contact-item:hover {
+            transform: translateX(6px);
+            box-shadow: 0 8px 25px rgba(196, 154, 122, 0.10);
+            border-color: rgba(196, 154, 122, 0.12);
+        }
 
-            .contact-item i {
-                font-size: 1.8rem;
-                color: var(--gold);
-                width: 40px;
-                text-align: center;
-            }
+        .contact-item i {
+            font-size: 1.8rem;
+            color: var(--gold);
+            width: 40px;
+            text-align: center;
+        }
 
-            .contact-item a {
-                color: var(--text-dark);
-                text-decoration: none;
-                font-weight: 500;
-            }
-
-                .contact-item a:hover {
-                    color: var(--gold);
-                }
+        .contact-item a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-item a:hover {
+            color: var(--gold);
+        }
 
         .contacts-social {
             display: flex;
@@ -714,18 +662,18 @@
             border: 1px solid rgba(196, 154, 122, 0.04);
         }
 
-            .social-link:hover {
-                background: var(--gold);
-                color: #fff;
-                transform: translateY(-5px);
-                border-color: var(--gold);
-            }
+        .social-link:hover {
+            background: var(--gold);
+            color: #fff;
+            transform: translateY(-5px);
+            border-color: var(--gold);
+        }
 
-            .social-link svg {
-                width: 28px;
-                height: 28px;
-                fill: currentColor;
-            }
+        .social-link svg {
+            width: 28px;
+            height: 28px;
+            fill: currentColor;
+        }
 
         footer {
             text-align: center;
@@ -757,16 +705,16 @@
             z-index: 998;
         }
 
-            #backToTop.show {
-                opacity: 1;
-                visibility: visible;
-                transform: scale(1);
-            }
+        #backToTop.show {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+        }
 
-            #backToTop:hover {
-                background: var(--text-dark);
-                transform: translateY(-4px);
-            }
+        #backToTop:hover {
+            background: var(--text-dark);
+            transform: translateY(-4px);
+        }
 
         /* ---------- ЛАЙТБОКС ---------- */
         .lightbox {
@@ -786,80 +734,78 @@
             flex-direction: column;
         }
 
-            .lightbox.active {
-                display: flex;
-            }
+        .lightbox.active {
+            display: flex;
+        }
 
-            .lightbox .lightbox-inner {
-                position: relative;
-                max-width: 90%;
-                max-height: 90%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                height: 100%;
-            }
+        .lightbox .lightbox-inner {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
 
-            .lightbox img {
-                max-width: 100%;
-                max-height: 100%;
-                object-fit: contain;
-                border-radius: 12px;
-                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-                transition: transform 0.3s ease;
-            }
+        .lightbox img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
 
-            .lightbox .close {
-                position: absolute;
-                top: 20px;
-                right: 30px;
-                font-size: 2.8rem;
-                color: #fff;
-                cursor: pointer;
-                transition: 0.3s;
-                background: none;
-                border: none;
-                z-index: 1001;
-            }
+        .lightbox .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2.8rem;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.3s;
+            background: none;
+            border: none;
+            z-index: 1001;
+        }
 
-                .lightbox .close:hover {
-                    transform: rotate(90deg);
-                    color: var(--gold);
-                }
+        .lightbox .close:hover {
+            transform: rotate(90deg);
+            color: var(--gold);
+        }
 
-            .lightbox .arrow {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                font-size: 3rem;
-                color: rgba(255, 255, 255, 0.7);
-                cursor: pointer;
-                background: rgba(0, 0, 0, 0.3);
-                border: none;
-                border-radius: 50%;
-                width: 60px;
-                height: 60px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: 0.3s ease;
-                z-index: 1001;
-                backdrop-filter: blur(4px);
-            }
+        .lightbox .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.7);
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.3);
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s ease;
+            z-index: 1001;
+            backdrop-filter: blur(4px);
+        }
 
-                .lightbox .arrow:hover {
-                    background: rgba(255, 255, 255, 0.15);
-                    color: #fff;
-                }
-
-                .lightbox .arrow.left {
-                    left: 20px;
-                }
-
-                .lightbox .arrow.right {
-                    right: 20px;
-                }
+        .lightbox .arrow:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+        }
+        .lightbox .arrow.left {
+            left: 20px;
+        }
+        .lightbox .arrow.right {
+            right: 20px;
+        }
 
         @media (max-width: 768px) {
             .lightbox .arrow {
@@ -867,14 +813,12 @@
                 width: 44px;
                 height: 44px;
             }
-
-                .lightbox .arrow.left {
-                    left: 10px;
-                }
-
-                .lightbox .arrow.right {
-                    right: 10px;
-                }
+            .lightbox .arrow.left {
+                left: 10px;
+            }
+            .lightbox .arrow.right {
+                right: 10px;
+            }
         }
 
         /* ---------- АДАПТИВ ---------- */
@@ -884,55 +828,44 @@
                 text-align: center;
                 justify-content: center;
             }
-
             .hero-text p {
                 margin-left: auto;
                 margin-right: auto;
             }
-
             .hero-bg {
                 background-position: center 30%;
             }
-
             .gallery {
                 grid-template-columns: repeat(2, 1fr);
                 grid-auto-rows: 240px;
                 gap: 20px;
             }
-
             .gallery-item:nth-child(1) {
                 grid-column: span 2;
                 grid-row: span 2;
             }
-
             .gallery-item:nth-child(2),
             .gallery-item:nth-child(3),
             .gallery-item:nth-child(4),
-            .gallery-item:nth-child(5),
-            .gallery-item:nth-child(6) {
+            .gallery-item:nth-child(5) {
                 grid-column: span 1;
                 grid-row: span 1;
             }
-
             .ba-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
-
             .ba-item img {
                 height: 280px;
             }
-
             .video-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr;
                 gap: 20px;
             }
-
             .contacts-wrapper {
                 flex-direction: column;
                 align-items: stretch;
             }
-
             .contacts-info {
                 align-items: stretch;
             }
@@ -942,7 +875,6 @@
             .header-inner {
                 justify-content: space-between;
             }
-
             nav {
                 display: none;
                 flex-direction: column;
@@ -957,55 +889,48 @@
                 right: 0;
                 width: 200px;
             }
-
-                nav.open {
-                    display: flex;
-                }
-
-                nav a {
-                    margin: 8px 20px;
-                    text-align: center;
-                    padding: 8px;
-                }
-
+            nav.open {
+                display: flex;
+            }
+            nav a {
+                margin: 8px 20px;
+                text-align: center;
+                padding: 8px;
+            }
             .nav-toggle {
                 display: block;
                 order: -1;
             }
-
             .hero-bg {
                 background-position: center 25%;
             }
-
             .hero-logo {
                 max-width: 300px;
             }
-
             .hero-text p {
                 font-size: 1rem;
             }
-
             .price-grid {
                 grid-template-columns: 1fr 1fr;
             }
-
             .contact-item {
                 padding: 12px 20px;
             }
-
             .lightbox .close {
                 top: 15px;
                 right: 20px;
                 font-size: 2.2rem;
             }
-
             .ba-item img {
                 height: 240px;
             }
-
             .about-text {
                 padding: 0 15px;
                 text-align: center;
+            }
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
             }
         }
 
@@ -1013,35 +938,28 @@
             .price-grid {
                 grid-template-columns: 1fr;
             }
-
             .gallery {
                 grid-template-columns: 1fr;
                 grid-auto-rows: 200px;
                 gap: 15px;
             }
-
             .gallery-item:nth-child(1),
             .gallery-item:nth-child(5) {
                 grid-column: span 1;
                 grid-row: span 1;
             }
-
             section {
                 padding: 50px 0;
             }
-
             h2 {
                 font-size: 2rem;
             }
-
             .hero-logo {
                 max-width: 240px;
             }
-
             .hero-bg {
                 background-position: center 20%;
             }
-
             #backToTop {
                 bottom: 20px;
                 right: 20px;
@@ -1049,11 +967,9 @@
                 height: 48px;
                 font-size: 1.4rem;
             }
-
             .ba-item img {
                 height: 200px;
             }
-
             .video-item video {
                 aspect-ratio: 16/9;
             }
@@ -1142,7 +1058,7 @@
         </div>
     </section>
 
-    <!-- ПОРТФОЛИО (ПОДПИСИ УДАЛЕНЫ) -->
+    <!-- ПОРТФОЛИО (5 фото, без подписей) -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="reveal">Мои работы</h2>
@@ -1173,7 +1089,7 @@
                         <img src="https://i.ibb.co/8DGLj4mH/photo-2026-06-27-16-03-26.jpg" alt="Образ 5" />
                     </div>
                 </div>
-                </div>
+                <!-- 6-й элемент удалён -->
             </div>
         </div>
     </section>
@@ -1196,7 +1112,7 @@
         </div>
     </section>
 
-    <!-- ВИДЕО -->
+    <!-- ВИДЕО (без подписей) -->
     <section id="video" class="video-section">
         <div class="container">
             <h2 class="reveal">Видео-процесс</h2>
@@ -1204,17 +1120,21 @@
             <div class="video-grid stagger-children" id="videoStagger">
                 <div class="video-item">
                     <video controls preload="metadata">
-                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        <source src="video/IMG_2756.MP4" type="video/mp4">
                         Ваш браузер не поддерживает видео.
                     </video>
-                    <div class="video-caption">Процесс создания макияжа</div>
                 </div>
                 <div class="video-item">
                     <video controls preload="metadata">
-                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        <source src="video/IMG_2760.MP4" type="video/mp4">
                         Ваш браузер не поддерживает видео.
                     </video>
-                    <div class="video-caption">Свадебный макияж</div>
+                </div>
+                <div class="video-item">
+                    <video controls preload="metadata">
+                        <source src="video/video_2026-06-28_16-56-57.mp4" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
                 </div>
             </div>
         </div>
