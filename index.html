@@ -431,7 +431,6 @@
             grid-column: span 1;
             grid-row: span 2;
         }
-        /* 6-й элемент удалён */
 
         /* ---------- ДО И ПОСЛЕ ---------- */
         .before-after {
@@ -496,7 +495,7 @@
             background: var(--gold);
         }
 
-        /* ---------- ВИДЕО (без подписей) ---------- */
+        /* ---------- ВИДЕО (исправлено: object-fit: contain, playsinline) ---------- */
         .video-section {
             background: var(--cream);
         }
@@ -526,7 +525,19 @@
             height: auto;
             display: block;
             aspect-ratio: 16/9;
-            object-fit: cover;
+            object-fit: contain;  /* изменено с cover на contain, чтобы не обрезалось */
+            background: #000;
+        }
+
+        /* Ограничиваем высоту видео на мобильных устройствах */
+        @media (max-width: 768px) {
+            .video-item video {
+                max-height: 50vh; /* не более половины экрана */
+            }
+            .video-grid {
+                grid-template-columns: 1fr; /* на телефонах – в столбец */
+                gap: 20px;
+            }
         }
 
         /* ---------- ПРАЙС ---------- */
@@ -858,16 +869,16 @@
             .ba-item img {
                 height: 280px;
             }
-            .video-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 20px;
-            }
             .contacts-wrapper {
                 flex-direction: column;
                 align-items: stretch;
             }
             .contacts-info {
                 align-items: stretch;
+            }
+            .video-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
             }
         }
 
@@ -969,9 +980,6 @@
             }
             .ba-item img {
                 height: 200px;
-            }
-            .video-item video {
-                aspect-ratio: 16/9;
             }
         }
     </style>
@@ -1089,7 +1097,6 @@
                         <img src="https://i.ibb.co/8DGLj4mH/photo-2026-06-27-16-03-26.jpg" alt="Образ 5" />
                     </div>
                 </div>
-                <!-- 6-й элемент удалён -->
             </div>
         </div>
     </section>
@@ -1112,26 +1119,26 @@
         </div>
     </section>
 
-    <!-- ВИДЕО (без подписей) -->
+    <!-- ВИДЕО (исправлено: не обрезается, playsinline, ограничена высота на мобильных) -->
     <section id="video" class="video-section">
         <div class="container">
             <h2 class="reveal">Видео-процесс</h2>
             <p class="section-subtitle reveal">Посмотрите, как рождается образ</p>
             <div class="video-grid stagger-children" id="videoStagger">
                 <div class="video-item">
-                    <video controls preload="metadata">
+                    <video controls preload="metadata" playsinline>
                         <source src="video/IMG_2756.MP4" type="video/mp4">
                         Ваш браузер не поддерживает видео.
                     </video>
                 </div>
                 <div class="video-item">
-                    <video controls preload="metadata">
+                    <video controls preload="metadata" playsinline>
                         <source src="video/IMG_2760.MP4" type="video/mp4">
                         Ваш браузер не поддерживает видео.
                     </video>
                 </div>
                 <div class="video-item">
-                    <video controls preload="metadata">
+                    <video controls preload="metadata" playsinline>
                         <source src="video/video_2026-06-28_16-56-57.mp4" type="video/mp4">
                         Ваш браузер не поддерживает видео.
                     </video>
