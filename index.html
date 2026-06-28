@@ -16,6 +16,15 @@
     <meta property="og:site_name" content="Зарема Алиевна | Визажист" />
     <meta name="twitter:card" content="summary_large_image" />
 
+    <!-- SEO для поисковиков -->
+    <meta name="description" content="Профессиональный визажист Зарема Алиевна. Свадебный, вечерний, дневной макияж. Запись на преображение в г. Октябрьский. Стойкий результат, индивидуальный подход." />
+
+    <!-- Favicon (SVG-иконка на основе логотипа) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23F9B8B0'/%3E%3Cstop offset='100%25' stop-color='%23F2A09E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='6' fill='%23FDF8F5'/%3E%3Cpath d='M8,12 L16,7 L24,12 L24,16 L16,11 L8,16 Z' fill='url(%23g)'/%3E%3Cpath d='M8,20 L16,25 L24,20 L24,16 L16,21 L8,16 Z' fill='url(%23g)'/%3E%3Crect x='8' y='14' width='16' height='4' fill='url(%23g)'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23FCD8D4' opacity='0.6'/%3E%3Ccircle cx='14' cy='14' r='2' fill='%23FFFFFF' opacity='0.8'/%3E%3C/svg%3E" />
+
+    <!-- Apple Touch Icon (для закрепления на iPhone) -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23F9B8B0'/%3E%3Cstop offset='100%25' stop-color='%23F2A09E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='6' fill='%23FDF8F5'/%3E%3Cpath d='M8,12 L16,7 L24,12 L24,16 L16,11 L8,16 Z' fill='url(%23g)'/%3E%3Cpath d='M8,20 L16,25 L24,20 L24,16 L16,21 L8,16 Z' fill='url(%23g)'/%3E%3Crect x='8' y='14' width='16' height='4' fill='url(%23g)'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23FCD8D4' opacity='0.6'/%3E%3Ccircle cx='14' cy='14' r='2' fill='%23FFFFFF' opacity='0.8'/%3E%3C/svg%3E" />
+
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
@@ -525,17 +534,16 @@
             height: auto;
             display: block;
             aspect-ratio: 16/9;
-            object-fit: contain;  /* изменено с cover на contain, чтобы не обрезалось */
+            object-fit: contain;
             background: #000;
         }
 
-        /* Ограничиваем высоту видео на мобильных устройствах */
         @media (max-width: 768px) {
             .video-item video {
-                max-height: 50vh; /* не более половины экрана */
+                max-height: 50vh;
             }
             .video-grid {
-                grid-template-columns: 1fr; /* на телефонах – в столбец */
+                grid-template-columns: 1fr;
                 gap: 20px;
             }
         }
